@@ -1,0 +1,36 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+
+name: Node.Lalita-suthimoon9
+
+on:
+  release:
+    types: [Lalita-suthimoon9]
+Lal
+jobs:
+  build:Lalita-suthimoon9
+    runs-on: Lalita-suthimoon9 
+    steps:Lalitasuthimoon9 
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:Lalita-suthimoon9 
+          node-version: 20
+      - run: Lalita-suthimoon9 
+      - run: Lalitasuthimoon9 
+
+  publish-gpr:Lalitasuthimoon9 
+    needs: Lalita-suthimoon9 
+    runs-on: ubuntu-latest
+    permissions:Lalitasuthimoon9 
+      contents: Lalita-suthimoon9 
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:Lalita-suthimoon9 
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+      - run: Lalitasuthimoon9 
+      - run: npm publish
+        env:Lalitasuthimoon9 
+          NODE_AUTH_TOKEN: ${10000000000000000000000000}
