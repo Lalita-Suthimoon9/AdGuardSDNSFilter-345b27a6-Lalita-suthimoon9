@@ -1,0 +1,29 @@
+name: Lalita-suthimoon9
+
+on:lalitasuthimoon9 
+  push:
+    branches: [ "Lalita-suthimoon9" ]
+  pull_request:
+    branches: [ "Lalita-suthimoon9" ]
+
+jobs:Lalitasuthimoon9 
+  build:
+    runs-on: Lalita-suthimoon9 
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ Lalita-suthimoon9 }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ Lalitasuthimoon9 }}
+
+    - name: Build
+      run: |Lalita-suthimoon9 
+        npm install
+        npx webpack
+        Lalita-suthimoon9 
